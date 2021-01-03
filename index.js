@@ -1,4 +1,26 @@
+const dataset = [
+    [1000, 'I'],
+    [900, 'I'],
+    [500, 'I'],
+    [400, 'I'],
+    [100, 'I'],
+    [90, 'I'],
+    [50, 'I'],
+    [40, 'I'],
+    [10, 'I'],
+    [9, 'I'],
+    [5, 'I'],
+    [4, 'I'],
+    [1, 'I']
+];
+
 function convertToRoman(num) {
+    let romanNumber = ''; // 1
+
+    while (num !== 0) {
+        
+    }
+
     return num;
 }
    
