@@ -1,24 +1,28 @@
 const dataset = [
-    [1000, 'I'],
-    [900, 'I'],
-    [500, 'I'],
-    [400, 'I'],
-    [100, 'I'],
-    [90, 'I'],
-    [50, 'I'],
-    [40, 'I'],
-    [10, 'I'],
-    [9, 'I'],
-    [5, 'I'],
-    [4, 'I'],
+    [1000, 'M'],
+    [900, 'CM'],
+    [500, 'D'],
+    [400, 'CD'],
+    [100, 'C'],
+    [90, 'XC'],
+    [50, 'L'],
+    [40, 'XL'],
+    [10, 'X'],
+    [9, 'Ix'],
+    [5, 'V'],
+    [4, 'IV'],
     [1, 'I']
 ];
 
 function convertToRoman(num) {
-    let romanNumber = ''; // 1
+    //let romanNumber = ''; // 1
 
     while (num !== 0) {
-        
+        for (let index = 0; index < dataset.length; index++) {
+            const element = dataset[index][0];
+            const romanSymbol = dataset[index][1];
+            
+        }
     }
 
     return num;
