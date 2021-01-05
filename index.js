@@ -1,3 +1,11 @@
+
+/*  
+    The dataset is arrange from large to small so that when a symbol appears before a larger symbol it is subtracted
+
+    Example: IV = V − I = 5 − 1 = 4
+    Example: IX = X − I = 10 − 1 = 9
+*/
+
 const dataset = [
     [1000, 'M'],
     [900, 'CM'],
@@ -8,24 +16,39 @@ const dataset = [
     [50, 'L'],
     [40, 'XL'],
     [10, 'X'],
-    [9, 'Ix'],
+    [9, 'IX'],
     [5, 'V'],
     [4, 'IV'],
     [1, 'I']
 ];
 
+/* 
+    convertToRoman
+    param: num
+*/
 function convertToRoman(num) {
-    //let romanNumber = ''; // 1
 
-    while (num !== 0) {
+    let romanNum = '';
+
+    while (!(num < 1)) { 
+        
         for (let index = 0; index < dataset.length; index++) {
-            const element = dataset[index][0];
-            const romanSymbol = dataset[index][1];
-            
-        }
+            const number = dataset[index][0]; // first value of the sub array
+            const symbol = dataset[index][1]; // corresponding (second) value of the sub array
+
+            if (num >= number ) {
+                
+                romanNum = romanNum + symbol;
+                num = num - number;
+
+                break; // otherwise it keeps adding
+            }
+    
+        } 
+    
     }
 
-    return num;
+    return romanNum;
 }
    
 
