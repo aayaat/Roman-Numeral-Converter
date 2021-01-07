@@ -13,3 +13,14 @@ convertToRoman(36);
 ```
 
 All [roman numerals](http://www.mathsisfun.com/roman-numerals.html) answers should be provided in upper-case.
+
+
+
+## Solution
+
+See the `index.js` for the solution. Do the following to run it
+
+```js
+node index.js
+```
+
